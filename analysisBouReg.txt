@@ -1,0 +1,27 @@
+bouregister-test.riksarkivet.se:443 has intermediate with bad ordering ssl/tls
+
+Changes needed to match the old level:
+* enable SSLv3
+* use a certificate with sha1WithRSAEncryption signature
+* use DHE of 1024bits and ECC of 160bits
+* consider enabling OCSP Stapling
+
+Changes needed to match the intermediate level:
+* consider using DHE of at least 2048bits and ECC of at least 256bits
+* consider enabling OCSP Stapling
+* increase priority of ECDHE-RSA-AES128-SHA256 over ECDHE-RSA-AES256-SHA
+* increase priority of AES128-SHA256 over AES256-SHA
+* fix ciphersuite ordering, use recommended intermediate ciphersuite
+
+Changes needed to match the modern level:
+* remove cipher ECDHE-RSA-AES256-SHA
+* remove cipher ECDHE-RSA-AES128-SHA
+* remove cipher AES256-SHA256
+* remove cipher AES256-SHA
+* remove cipher AES128-SHA256
+* remove cipher AES128-SHA
+* remove cipher DES-CBC3-SHA
+* disable TLSv1.1
+* disable TLSv1
+* use DHE of at least 2048bits and ECC of at least 256bits
+* consider enabling OCSP Stapling

@@ -1,0 +1,40 @@
+....................................
+Target: www.riksdagen.se:443
+
+prio  ciphersuite                  protocols              pubkey_size  signature_algoritm       trusted  ticket_hint  ocsp_staple  npn   pfs                 curves                curves_ordering
+1     DHE-RSA-AES256-GCM-SHA384    TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  DH,1024bits         None
+2     DHE-RSA-AES128-GCM-SHA256    TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  DH,1024bits         None
+3     DHE-RSA-AES256-SHA256        TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  DH,1024bits         None
+4     DHE-RSA-AES256-SHA           TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  DH,1024bits         None
+5     DHE-RSA-AES128-SHA256        TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  DH,1024bits         None
+6     DHE-RSA-AES128-SHA           TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  DH,1024bits         None
+7     EDH-RSA-DES-CBC3-SHA         TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  DH,1024bits         None
+8     AES256-GCM-SHA384            TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  None                None
+9     AES128-GCM-SHA256            TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  None                None
+10    AES256-SHA256                TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  None                None
+11    AES256-SHA                   TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  None                None
+12    AES128-SHA256                TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  None                None
+13    AES128-SHA                   TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  None                None
+14    DES-CBC3-SHA                 TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  None                None
+15    ECDHE-RSA-AES256-GCM-SHA384  TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  ECDH,P-384,384bits  prime256v1,secp384r1  client
+16    ECDHE-RSA-AES128-GCM-SHA256  TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  ECDH,P-384,384bits  prime256v1,secp384r1  client
+17    ECDHE-RSA-AES256-SHA384      TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  ECDH,P-384,384bits  prime256v1,secp384r1  client
+18    ECDHE-RSA-AES256-SHA         TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  ECDH,P-384,384bits  prime256v1,secp384r1  client
+19    ECDHE-RSA-AES128-SHA256      TLSv1.2                2048         sha256WithRSAEncryption  True     None         False        None  ECDH,P-384,384bits  prime256v1,secp384r1  client
+20    ECDHE-RSA-AES128-SHA         TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  ECDH,P-384,384bits  prime256v1,secp384r1  client
+21    ECDHE-RSA-DES-CBC3-SHA       TLSv1,TLSv1.1,TLSv1.2  2048         sha256WithRSAEncryption  True     None         False        None  ECDH,P-384,384bits  prime256v1,secp384r1  client
+
+OCSP stapling: not supported
+Cipher ordering: server
+Curves ordering: unknown - fallback: no
+Server supports secure renegotiation
+Server supported compression methods: NONE
+TLS Tolerance: yes
+
+Intolerance to:
+ SSL 3.254           : absent
+ TLS 1.0             : absent
+ TLS 1.1             : absent
+ TLS 1.2             : absent
+ TLS 1.3             : absent
+ TLS 1.4             : absent
